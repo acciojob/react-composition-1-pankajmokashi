@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 
 const Comp1 = ({tabs}) => {
-    let [tab, setTab] = useState("")
+    let [tab, setTab] = useState("This is the content for tab 1.")
 
     function changeHandle(content){
         setTab(content)
@@ -13,7 +13,7 @@ const Comp1 = ({tabs}) => {
                 {
                     tabs.map((ele) =>(
                         <li
-                            onClick={() => changeHandle(tab.contents)}
+                            onClick={() => changeHandle(ele.contents)}
                         >
                             {ele.titles}
                         </li>
