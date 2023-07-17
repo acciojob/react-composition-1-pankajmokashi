@@ -10,7 +10,6 @@ const tabs = [{title: "Tab 1", content: "This is the content for Tab 1."},
 const App = () => {
   return (
     <div>
-        {/* Do not remove the main div */}
         <Comp1 tabs={tabs}/>
     </div>
   )
